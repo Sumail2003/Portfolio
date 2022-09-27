@@ -1,26 +1,241 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<title>Page Title</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imgs/programming.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 </style>
-<script src=""></script>
+</head>
 <body>
 
-<img src="img_la.jpg" alt="LA" style="width:100%">
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about-section">About</a>
+  <a href="#work">Work</a>
+  <a href="#contact">Contact</a>
+</div>
 
-<div class="">
- <h1>This is a Heading</h1>
- <p>This is a paragraph.</p>
- <p>This is another paragraph.</p>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Sumail Aasi</h1>
+    <p>Software Engineer</p>
+    <form action="https://www.linkedin.com/in/sumail-aasi/">
+    <button>Connect With Me</button>
+  </div>
+</div>
+<div class="about-section">
+  <div id="about-section"></div>
+  <h1>About Me</h1>
+  <p>Second year Software Engineering student with a passion for Technology and Business</p>
+  <p>Currently Pursuing my BESc and HBA at Western University</p>
+</div>
+
+<h2 style="text-align:center">Sumail Aasi</h2>
+<div class="row" style="background-color: #F8F8FF">
+  <div class="row">
+    <div class="card">
+      <img src="imgs/Sumail_Aasi.jpg" alt="Sumail" style="width:25%" class="center">
+      <div class="work">
+        <div id="work"></div>
+        <h2>Work Experience</h2>
+        <p class="title">TJX Canada</p>
+        <p>Data Center Associate</p>
+        <p>- Responsible for facilitating and supporting Distribution Center production flow by ensuring the data from Store Labels are logged into the companies database with complete accuracy <br> 
+          - Collected Store Labels and Order Tickets directly from the DC and prepared the ticket for data entry <br> 
+          - Worked with the TJX WMI System and followed essential company protocol <br> 
+          - Collaborated with Operations Coordinator to ensure that data stored was up to date and needed for future shipments
+
+           <p class="title">Genzup Global</p>
+        <p>Associate</p>
+        <p> - Managed the marketing campaign for an MP Candidate in Brampton <br>
+- Oversaw administrative tasks within the office while running the social media pages of the candidate <br>
+- Collaborated with the marketing team to develop effective social media strategies to boost engagement <br>
+- reated meaningful content while using tactical marketing software to share the content in an efficient manner <br>
+
+  <p class="title">Ace Education</p>
+        <p>Founder</p>
+        <p>- Founder of a privately owned tutoring business specializing in grade 12 math <br>
+- Conducted weekly group sessions (approximately 18 hours per week) <br>
+- Used numerous Google resources such as Meets, Calendar, and Sheets to keep everything documented and in order<br>
+- Spent around 5-7 hours per week marking tests and editing lessons/worksheets <br>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contact">
+  <div id="contact"></div>
+  <div style="text-align:center">
+    <h2>Contact Me</h2>
+    <p>Reach out with any inquiries you may have</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: -13;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+</style>
+
+<div class="footer">
+  <p>
+        <form action="file:///Users/sumailaasi/Desktop/Website/index.html">
+    <button>Scroll To Top</button>
+  </p>
 </div>
 
 </body>
